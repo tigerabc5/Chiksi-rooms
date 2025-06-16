@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chiksi Rooms</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      margin-top: 20px;
+    }
+    .button {
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .room {
+      background: white;
+      margin: 15px auto;
+      padding: 15px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .room img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .info {
+      flex: 1;
+      text-align: left;
+    }
+    .whatsapp {
+      background-color: #25d366;
+      color: white;
+      padding: 6px 10px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    form {
+      background: white;
+      padding: 15px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .form-title {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Chiksi Rooms</h1>
+  <button class="button">Find Rooms in Chiksi Village<br><small>चिक्सि गांव में कमरों की खोज करें</small></button>
+
+  <h2>Room Listings<br><small>कमरों की सूची</small></h2>
+
+  <div class="room">
+    <img src="https://via.placeholder.com/80" alt="room" />
+    <div class="info">
+      <strong>Sharma Ji</strong><br />
+      ₹2,500<br />
+      Near Main Road
+    </div>
+    <a href="https://wa.me/911234567890" class="whatsapp">WhatsApp</a>
+  </div>
+
+  <div class="room">
+    <img src="https://via.placeholder.com/80" alt="room" />
+    <div class="info">
+      <strong>Meena</strong><br />
+      ₹3,000<br />
+      Chiksi Gaon
+    </div>
+    <a href="https://wa.me/911234567891" class="whatsapp">WhatsApp</a>
+  </div>
+
+  <div class="room">
+    <img src="https://via.placeholder.com/80" alt="room" />
+    <div class="info">
+      <strong>Rajesh</strong><br />
+      ₹3,500<br />
+      Near Bus Stand
+    </div>
+    <a href="https://wa.me/911234567892" class="whatsapp">WhatsApp</a>
+  </div>
+
+  <h2 class="form-title">Add Your Room<br><small>अपना कमरा जोड़ें</small></h2>
+  <form>
+    <label for="name">नाम / Name:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="rent">किराया / Rent (₹):</label>
+    <input type="number" id="rent" name="rent" required />
+
+    <label for="location">स्थान / Location:</label>
+    <input type="text" id="location" name="location" required />
+
+    <label for="whatsapp">WhatsApp नंबर:</label>
+    <input type="tel" id="whatsapp" name="whatsapp" required />
+
+    <label for="photo">कमरे की फोटो (लिंक):</label>
+    <input type="url" id="photo" name="photo" required />
+
+    <button class="button" type="submit">Submit / सबमिट करें</button>
+  </form>
+
+  <h2 class="form-title">Need a Room?<br><small>क्या आप कमरा ढूंढ रहे हैं?</small></h2>
+  <form>
+    <label for="renter-name">नाम / Name:</label>
+    <input type="text" id="renter-name" name="renter-name" required />
+
+    <label for="budget">बजट / Budget (₹):</label>
+    <input type="number" id="budget" name="budget" required />
+
+    <label for="contact">WhatsApp नंबर:</label>
+    <input type="tel" id="contact" name="contact" required />
+
+    <label for="notes">विशेष जरूरत / Notes:</label>
+    <textarea id="notes" name="notes" rows="3"></textarea>
+
+    <button class="button" type="submit">Submit / सबमिट करें</button>
+  </form>
+</body>
+</html>
