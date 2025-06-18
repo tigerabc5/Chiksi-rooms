@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="hi">
 <head>
@@ -55,30 +56,6 @@
       text-decoration: none;
       font-size: 14px;
     }
-    form {
-      background: white;
-      padding: 15px;
-      margin: 20px auto;
-      width: 90%;
-      max-width: 500px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      text-align: left;
-    }
-    label {
-      display: block;
-      margin-top: 10px;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    .form-title {
-      text-align: center;
-    }
   </style>
 </head>
 <body>
@@ -117,41 +94,6 @@
     <a href="https://wa.me/911234567892" class="whatsapp">WhatsApp</a>
   </div>
 
-  <h2 class="form-title">Add Your Room<br><small>अपना कमरा जोड़ें</small></h2>
-  <form>
-    <label for="name">नाम / Name:</label>
-    <input type="text" id="name" name="name" required />
-
-    <label for="rent">किराया / Rent (₹):</label>
-    <input type="number" id="rent" name="rent" required />
-
-    <label for="location">स्थान / Location:</label>
-    <input type="text" id="location" name="location" required />
-
-    <label for="whatsapp">WhatsApp नंबर:</label>
-    <input type="tel" id="whatsapp" name="whatsapp" required />
-
-    <label for="photo">कमरे की फोटो (लिंक):</label>
-    <input type="url" id="photo" name="photo" required />
-
-    <button class="button" type="submit">Submit / सबमिट करें</button>
-  </form>
-
-  <h2 class="form-title">Need a Room?<br><small>क्या आप कमरा ढूंढ रहे हैं?</small></h2>
-  <form>
-    <label for="renter-name">नाम / Name:</label>
-    <input type="text" id="renter-name" name="renter-name" required />
-
-    <label for="budget">बजट / Budget (₹):</label>
-    <input type="number" id="budget" name="budget" required />
-
-    <label for="contact">WhatsApp नंबर:</label>
-    <input type="tel" id="contact" name="contact" required />
-
-    <label for="notes">विशेष जरूरत / Notes:</label>
-    <textarea id="notes" name="notes" rows="3"></textarea>
-
-    <button class="button" type="submit">Submit / सबमिट करें</button>
-  </form>
+  <button class="button">Add Room<br><small>कमरा जोड़ें</small></button>
 </body>
 </html>
